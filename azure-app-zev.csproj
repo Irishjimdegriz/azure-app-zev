@@ -5,6 +5,12 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>azure_app_zev</RootNamespace>
+    <ApplicationInsightsResourceId>/subscriptions/c203d8ea-0dde-4196-a365-52ae5e558cb2/resourceGroups/az-group-rg/providers/microsoft.insights/components/azure-app-zev</ApplicationInsightsResourceId>
+    <UserSecretsId>75b3b3cd-6f8f-423a-9237-62718abfb2e9</UserSecretsId>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.21.0" />
+  </ItemGroup>
 
 </Project>
