@@ -24,8 +24,11 @@ jobs:
       - name: Build with dotnet
         run: dotnet build --configuration Release
 
+      - name: Build with dotnet
+        run: dotnet build --configuration Release ./azure-app-zev/azure-app-zev.csproj
+
       - name: dotnet publish
-        run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/myapp
+        run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/myapp ./azure-app-zev/azure-app-zev.csproj
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
